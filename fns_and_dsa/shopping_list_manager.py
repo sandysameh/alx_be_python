@@ -9,14 +9,14 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = input("Enter your choice: ")
+        choice = int(input("Enter your choice: "))
 
-        if choice == '1':
+        if choice == 1:
             addedItem =input("Enter the item to add:")
             shopping_list.append(addedItem)
             # Prompt for and add an item
             pass
-        elif choice == '2':
+        elif choice == 2:
             removedItem =input("Item you want to remove ?")
             if removedItem in shopping_list:
                 shopping_list.remove(removedItem)
@@ -24,12 +24,12 @@ def main():
                 print("Item doesn't exist in cart")
             # Prompt for and remove an item
             pass
-        elif choice == '3':
+        elif choice == 3:
             for item in shopping_list:
                 print(item +" ,", end="")
             # Display the shopping list
             pass
-        elif choice == '4':
+        elif choice == 4:
             print("Goodbye!")
             break
         else:
