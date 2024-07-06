@@ -13,6 +13,8 @@ def calculate_future_date():
         delta = display_current_datetime() +timedelta(days=days)
         
         print(f"Future date:{delta.strftime('%Y-%m-%d')}")
+        return delta.strftime('%Y-%m-%d')
+
         
     else :
         print("Please enter a valid number")
